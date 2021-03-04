@@ -1,0 +1,124 @@
+<html><head><meta charset="utf-8"/><title>Test Report</title><style type="text/css">html, body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	margin: 0;
+	padding: 0;
+	color: #333;
+}
+body {
+	padding: 1rem;
+	font-size: 0.85rem;
+}
+header {
+	display: flex;
+	align-items: center;
+}
+#title {
+	margin: 0;
+	flex-grow: 1;
+}
+#logo {
+	height: 4rem;
+}
+#timestamp {
+	font-weight: bold;
+	color: #666;
+	margin-bottom: 0.5rem;
+}
+#summary {
+	color: #999;
+	margin-bottom: 1rem;
+}
+.suite-info {
+	padding: 1rem;
+	background-color: #eee;
+	border-bottom: 2px solid #999;
+	color: #999;
+	display: flex;
+	align-items: center;
+}
+.suite-info .suite-path {
+	font-weight: bold;
+	word-break: break-all;
+	flex-grow: 1;
+}
+.suite-info .suite-time {
+	margin-left: 0.5rem;
+	padding: 0.2rem 0.3rem;
+	font-size: 0.75rem;
+}
+.suite-info .suite-time.warn {
+	background-color: #D8000C;
+	color: #fff;
+}
+.suite-table {
+	width: 100%;
+	font-size: 0.85rem;
+	margin-bottom: 1em;
+}
+.suite-table td {
+	padding: 0.5rem;
+}
+.suite-table tr.passed {
+	background-color: #DFF2BF;
+	color: #4F8A10;
+}
+.suite-table tr.pending {
+	background-color: #FEEFB3;
+	color: #9F6000;
+}
+.suite-table tr.failed {
+	background-color: #FFBABA;
+	color: #D8000C;
+}
+.suite-table td {
+	font-size: 0.85rem;
+	border-bottom: 1px solid #aaa;
+	vertical-align: top;
+}
+.suite-table td.suite {
+	font-weight: bold;
+	width: 20%;
+}
+.suite-table td.test {
+	font-style: italic;
+	width: 60%;
+}
+.suite-table td.test .failureMsg {
+	font-size: 1rem;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+.suite-table td.result {
+	width: 20%;
+	text-align: right;
+}
+
+/* CONSOLE LOGS */
+.suite-consolelog {
+	margin-bottom: 2rem;
+	padding: 1rem;
+	background-color: #efefef;
+}
+.suite-consolelog-header {
+	font-weight: bold;
+}
+.suite-consolelog-item {
+	padding: 0.5rem;
+}
+.suite-consolelog-item pre {
+	margin: 0;
+}
+.suite-consolelog-item-origin {
+	color: #777;
+	font-weight: bold;
+}
+.suite-consolelog-item-message {
+	color: #000;
+	font-size: 1rem;
+	padding: 0 0.5rem;
+}
+</style></head><body><div id="jesthtml-content"><header><h1 id="title">Test Report</h1></header><div id="metadata-container"><div id="timestamp">Start: 2020-06-02 09:40:59</div><div id="summary">93 tests -- 93 passed / 0 failed / 0 pending</div></div><div class="suite-info"><div class="suite-path">/home/cab230/Desktop/Projects/Client/stocksapi-tests-master/integration.test.js</div><div class="suite-time">1.603s</div></div><table class="suite-table" cellspacing="0" cellpadding="0"><tr class="passed"><td class="suite">stock symbols &gt; with invalid query parameter</td><td class="test">should return status code 400</td><td class="result">passed in 0.002s</td></tr><tr class="passed"><td class="suite">stock symbols &gt; with invalid query parameter</td><td class="test">should return status text - Bad Request</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">stock symbols &gt; with invalid query parameter</td><td class="test">should contain message property</td><td class="result">passed in 0.001s</td></tr><tr class="passed"><td class="suite">stock symbols &gt; with false industry</td><td class="test">should return status code 404</td><td class="result">passed in 0.001s</td></tr><tr class="passed"><td class="suite">stock symbols &gt; with false industry</td><td class="test">should return status text - Not Found</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">stock symbols &gt; with false industry</td><td class="test">should contain message property</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">stock symbols &gt; with no parameter</td><td class="test">should return status code 200</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">stock symbols &gt; with no parameter</td><td class="test">should return status OK</td><td class="result">passed in 0.001s</td></tr><tr class="passed"><td class="suite">stock symbols &gt; with no parameter</td><td class="test">should contain correct first name property</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">stock symbols &gt; with no parameter</td><td class="test">should contain correct first symbol property</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">stock symbols &gt; with no parameter</td><td class="test">should contain correct first industry property</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">stock symbols &gt; with valid query parameter</td><td class="test">should return status code 200</td><td class="result">passed in 0.001s</td></tr><tr class="passed"><td class="suite">stock symbols &gt; with valid query parameter</td><td class="test">should return status OK</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">stock symbols &gt; with valid query parameter</td><td class="test">should contain correct first name property</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">stock symbols &gt; with valid query parameter</td><td class="test">should contain correct first symbol property</td><td class="result">passed in 0.001s</td></tr><tr class="passed"><td class="suite">stock symbols &gt; with valid query parameter</td><td class="test">should contain correct first industry property</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">specific stocks &gt; with invalid query parameters</td><td class="test">should return status code 400</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">specific stocks &gt; with invalid query parameters</td><td class="test">should return status text - Bad Request</td><td class="result">passed in 0.001s</td></tr><tr class="passed"><td class="suite">specific stocks &gt; with invalid query parameters</td><td class="test">should contain message property</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">specific stocks &gt; with unknown stock symbol</td><td class="test">should return status code 404</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">specific stocks &gt; with unknown stock symbol</td><td class="test">should return status text - Not Found</td><td class="result">passed in 0.001s</td></tr><tr class="passed"><td class="suite">specific stocks &gt; with unknown stock symbol</td><td class="test">should contain message property</td><td class="result">passed in 0.018s</td></tr><tr class="passed"><td class="suite">specific stocks &gt; with a correctly formatted parameter</td><td class="test">should return status code 200</td><td class="result">passed in 0.002s</td></tr><tr class="passed"><td class="suite">specific stocks &gt; with a correctly formatted parameter</td><td class="test">should return status OK</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">specific stocks &gt; with a correctly formatted parameter</td><td class="test">should contain correct name property</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">specific stocks &gt; with a correctly formatted parameter</td><td class="test">should contain correct symbol property</td><td class="result">passed in 0.001s</td></tr><tr class="passed"><td class="suite">specific stocks &gt; with a correctly formatted parameter</td><td class="test">should contain correct industry property</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">specific stocks &gt; with a correctly formatted parameter</td><td class="test">should contain correct timestamp property</td><td class="result">passed in 0.002s</td></tr><tr class="passed"><td class="suite">specific stocks &gt; with a correctly formatted parameter</td><td class="test">should contain correct open property</td><td class="result">passed in 0.001s</td></tr><tr class="passed"><td class="suite">specific stocks &gt; with a correctly formatted parameter</td><td class="test">should contain correct high property</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">specific stocks &gt; with a correctly formatted parameter</td><td class="test">should contain correct low property</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">specific stocks &gt; with a correctly formatted parameter</td><td class="test">should contain correct close property</td><td class="result">passed in 0.001s</td></tr><tr class="passed"><td class="suite">specific stocks &gt; with a correctly formatted parameter</td><td class="test">should contain correct volumes property</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">user &gt; registration &gt; with missing email</td><td class="test">should return status code 400</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">user &gt; registration &gt; with missing email</td><td class="test">should return status text - Bad Request</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">user &gt; registration &gt; with missing email</td><td class="test">should contain message property</td><td class="result">passed in 0.001s</td></tr><tr class="passed"><td class="suite">user &gt; registration &gt; with missing password</td><td class="test">should return status code 400</td><td class="result">passed in 0.001s</td></tr><tr class="passed"><td class="suite">user &gt; registration &gt; with missing password</td><td class="test">should return status text - Bad Request</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">user &gt; registration &gt; with missing password</td><td class="test">should contain message property</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">user &gt; registration &gt; with missing email and password</td><td class="test">should return status code 400</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">user &gt; registration &gt; with missing email and password</td><td class="test">should return status text - Bad Request</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">user &gt; registration &gt; with missing email and password</td><td class="test">should contain message property</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">user &gt; registration &gt; with valid email and password</td><td class="test">should return status code 201</td><td class="result">passed in 0.001s</td></tr><tr class="passed"><td class="suite">user &gt; registration &gt; with valid email and password</td><td class="test">should return status text - Created</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">user &gt; registration &gt; with valid email and password</td><td class="test">should contain message property</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">login &gt; with missing email</td><td class="test">should return status code 400</td><td class="result">passed in 0.001s</td></tr><tr class="passed"><td class="suite">login &gt; with missing email</td><td class="test">should return status text - Created</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">login &gt; with missing email</td><td class="test">should contain message property</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">login &gt; with missing password</td><td class="test">should return status code 400</td><td class="result">passed in 0.001s</td></tr><tr class="passed"><td class="suite">login &gt; with missing password</td><td class="test">should return status text - Created</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">login &gt; with missing password</td><td class="test">should contain message property</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">login &gt; with non-existing user (email)</td><td class="test">should return status code 401</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">login &gt; with non-existing user (email)</td><td class="test">should return status text - Created</td><td class="result">passed in 0.001s</td></tr><tr class="passed"><td class="suite">login &gt; with non-existing user (email)</td><td class="test">should contain message property</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">login &gt; with invalid password</td><td class="test">should return status code 401</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">login &gt; with invalid password</td><td class="test">should return status text - Created</td><td class="result">passed in 0.001s</td></tr><tr class="passed"><td class="suite">login &gt; with invalid password</td><td class="test">should contain message property</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">login &gt; with valid email and password</td><td class="test">should return status code 200</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">login &gt; with valid email and password</td><td class="test">should return status text - OK</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">login &gt; with valid email and password</td><td class="test">should contain token property</td><td class="result">passed in 0.001s</td></tr><tr class="passed"><td class="suite">login &gt; with valid email and password</td><td class="test">should contain token_type property</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">login &gt; with valid email and password</td><td class="test">should contain expires_in property</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">login &gt; with valid email and password</td><td class="test">should contain correct token_type</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">login &gt; with valid email and password</td><td class="test">should contain correct expires_in</td><td class="result">passed in 0.001s</td></tr><tr class="passed"><td class="suite">authorised route &gt; with invalid paramaters/data format</td><td class="test">should return status code 400</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">authorised route &gt; with invalid paramaters/data format</td><td class="test">should return status text - Bad Request</td><td class="result">passed in 0.001s</td></tr><tr class="passed"><td class="suite">authorised route &gt; with invalid paramaters/data format</td><td class="test">should contain message property</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">authorised route &gt; with no authorisation header</td><td class="test">should return status code 403</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">authorised route &gt; with no authorisation header</td><td class="test">should return status text - Forbidden</td><td class="result">passed in 0.001s</td></tr><tr class="passed"><td class="suite">authorised route &gt; with no authorisation header</td><td class="test">should contain message property</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">authorised route &gt; with out of bounds dates</td><td class="test">should return status code 404</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">authorised route &gt; with out of bounds dates</td><td class="test">should return status text - Not Found</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">authorised route &gt; with out of bounds dates</td><td class="test">should contain message property</td><td class="result">passed in 0.001s</td></tr><tr class="passed"><td class="suite">authorised route &gt; with correctly formated query and authorization header</td><td class="test">should return status code 200</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">authorised route &gt; with correctly formated query and authorization header</td><td class="test">should return status text - OK</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">authorised route &gt; with correctly formated query and authorization header</td><td class="test">should contain correct -to- date</td><td class="result">passed in 0.001s</td></tr><tr class="passed"><td class="suite">authorised route &gt; with correctly formated query and authorization header</td><td class="test">should contain correct -to- symbol</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">authorised route &gt; with correctly formated query and authorization header</td><td class="test">should contain correct -to- name property</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">authorised route &gt; with correctly formated query and authorization header</td><td class="test">should contain correct -to- industry property</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">authorised route &gt; with correctly formated query and authorization header</td><td class="test">should contain correct -to- open property</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">authorised route &gt; with correctly formated query and authorization header</td><td class="test">should contain correct -to- high property</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">authorised route &gt; with correctly formated query and authorization header</td><td class="test">should contain correct -to- low property</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">authorised route &gt; with correctly formated query and authorization header</td><td class="test">should contain correct -to- close property</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">authorised route &gt; with correctly formated query and authorization header</td><td class="test">should contain correct -to- volumes property</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">authorised route &gt; with correctly formated query and authorization header</td><td class="test">should contain correct -from- date</td><td class="result">passed in 0.001s</td></tr><tr class="passed"><td class="suite">authorised route &gt; with correctly formated query and authorization header</td><td class="test">should contain correct -from- symbol</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">authorised route &gt; with correctly formated query and authorization header</td><td class="test">should contain correct -from- name property</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">authorised route &gt; with correctly formated query and authorization header</td><td class="test">should contain correct -from- industry property</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">authorised route &gt; with correctly formated query and authorization header</td><td class="test">should contain correct -from- open property</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">authorised route &gt; with correctly formated query and authorization header</td><td class="test">should contain correct -from- high property</td><td class="result">passed in 0.001s</td></tr><tr class="passed"><td class="suite">authorised route &gt; with correctly formated query and authorization header</td><td class="test">should contain correct -from- low property</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">authorised route &gt; with correctly formated query and authorization header</td><td class="test">should contain correct -from- close property</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">authorised route &gt; with correctly formated query and authorization header</td><td class="test">should contain correct -from- volumes property</td><td class="result">passed in 0s</td></tr></table></div></body></html>
